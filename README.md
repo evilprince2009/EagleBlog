@@ -19,7 +19,7 @@ A basic Blog site with C++ and [CROW Framework](https://crowcpp.org/) in back en
 ```
 boost::asio::io_service& get_io_service()
 {
-  return raw_socket().get_io_service();
+  return socket_.get_io_service();
 }
 ```
 with 
