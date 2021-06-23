@@ -34,5 +34,8 @@
     <None Include="style.css">
       <Filter>public</Filter>
     </None>
+    <None Include="about.html">
+      <Filter>public</Filter>
+    </None>
   </ItemGroup>
 </Project>

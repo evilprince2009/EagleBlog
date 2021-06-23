@@ -146,6 +146,7 @@
     <ClInclude Include="crow_all.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="about.html" />
     <None Include="index.html" />
     <None Include="style.css" />
   </ItemGroup>
