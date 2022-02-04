@@ -1,3 +1,5 @@
+// Just ignore this file while working
+
 #include <string>
 #include <iostream>
 
@@ -49,6 +51,45 @@ int NumberOfCharacters(string filename)
         count += line.length();
     }
     return count;
+}
+
+// write a function to determine the most common word in a file
+string MostCommon(string filename)
+{
+    int count = 0;
+    string word;
+    string mostCommon;
+    ifstream file(filename);
+    while (file >> word)
+    {
+        if (count == 0)
+        {
+            mostCommon = word;
+        }
+        if (word == mostCommon)
+        {
+            count++;
+        }
+        else
+        {
+            count--;
+        }
+    }
+    return mostCommon;
+}
+
+// check palindrome
+bool IsPalindrome(string word)
+{
+    int length = word.length();
+    for (int i = 0; i < length / 2; i++)
+    {
+        if (word[i] != word[length - i - 1])
+        {
+            return false;
+        }
+    }
+    return true;
 }
 
 int main(int argc, char const *argv[])
